@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Montserrat;
+    background-color: hsl(30, 38%, 92%);
+    font-size: .875rem;
+}
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 28em;
+    border-radius: 10px;
+}
+img {
+    max-width: 100%;
+}
+
+.content {
+    padding: 1em;
+}
+p:has(+ h1) {
+    letter-spacing: .8em;
+    font-variant: all-small-caps;
+}
+h1 {
+    font-family: Fraunces;
+}
+h1 + p {
+    line-height: 1.5;
+}
+strong {
+    font-size: 3rem;
+    font-family: Fraunces;
+}
+button {
+    background: url(/images/icon-cart.svg) no-repeat left;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    padding: 1em;
+    border-radius: 10px;
+    border: 0;
+}
