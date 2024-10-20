@@ -5,18 +5,32 @@ body {
     font-family: Montserrat;
     background-color: hsl(30, 38%, 92%);
     font-size: .875rem;
+    min-height: 100vh;
+    padding: 1em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 25%);
 }
 .container {
     background-color: hsl(0, 0%, 100%);
-    width: 28em;
     border-radius: 10px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+picture {
+    display: block;
+    height: auto;
 }
 img {
+    max-height: 60vh;
     max-width: 100%;
 }
-
 .content {
-    padding: 1em;
+    padding: 1.5em;
 }
 p:has(+ h1) {
     letter-spacing: .8em;
@@ -24,6 +38,7 @@ p:has(+ h1) {
 }
 h1 {
     font-family: Fraunces;
+    color: hsl(0, 0%, 0%);
 }
 h1 + p {
     line-height: 1.5;
@@ -31,6 +46,12 @@ h1 + p {
 strong {
     font-size: 3rem;
     font-family: Fraunces;
+    color: hsl(158, 36%, 37%);
+}
+span {
+    text-decoration: line-through;
+    vertical-align: 75%;
+    margin-left: 1em;
 }
 button {
     background: url(/images/icon-cart.svg) no-repeat left;
@@ -38,8 +59,9 @@ button {
     font-size: 1.5em;
     color: hsl(0, 0%, 100%);
     background-color: hsl(158, 36%, 37%);
-    width: 100%;
     padding: 1em;
     border-radius: 10px;
     border: 0;
+    width: 100%;
+    background-position: 25%;
 }
